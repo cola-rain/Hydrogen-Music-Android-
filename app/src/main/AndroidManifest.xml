@@ -1,0 +1,26 @@
+<manifest xmlns:android='http://schemas.android.com/apk/res/android'>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name='.HydrogenApplication'
+        android:allowBackup='true'
+        android:icon='@drawable/ic_hydrogen_logo'
+        android:label='Hydrogen Pad Zero'
+        android:roundIcon='@drawable/ic_hydrogen_logo'
+        android:supportsRtl='true'
+        android:theme='@style/Theme.HydrogenPadZero'>
+        <activity
+            android:name='.MainActivity'
+            android:exported='true'
+            android:screenOrientation='landscape'
+            android:configChanges='orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|layoutDirection|fontScale|uiMode'>
+            <intent-filter>
+                <action android:name='android.intent.action.MAIN' />
+                <category android:name='android.intent.category.LAUNCHER' />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
