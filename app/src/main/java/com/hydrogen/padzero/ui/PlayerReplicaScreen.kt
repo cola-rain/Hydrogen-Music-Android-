@@ -1,5 +1,6 @@
 package com.hydrogen.padzero.ui
 
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -87,8 +88,8 @@ fun PlayerReplicaScreen(
     ) {
         val density = LocalDensity.current
         val screenScale = remember(maxWidth, maxHeight) {
-            val widthRatio = (maxWidth / 1366.dp).value
-            val heightRatio = (maxHeight / 768.dp).value
+            val widthRatio = maxWidth / 1366.dp
+            val heightRatio = maxHeight / 768.dp
             min(widthRatio, heightRatio).coerceIn(0.42f, 1f)
         }
         val horizontalScroll = rememberScrollState()
