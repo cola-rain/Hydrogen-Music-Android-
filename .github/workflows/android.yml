@@ -28,10 +28,13 @@ jobs:
       uses: android-actions/setup-android@v3
 
 
-    - name: Build APK
+    - name: Fix gradlew
       run: |
+        sed -i 's/\r$//' gradlew
         chmod +x gradlew
-        ./gradlew assembleDebug
+
+    - name: Build APK
+      run: ./gradlew assembleDebug
 
 
     - name: Upload APK
