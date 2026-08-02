@@ -1,0 +1,6 @@
+<resources>
+    <color name='hydrogen_primary'>#1696D2</color>
+    <color name='hydrogen_primary_dark'>#6FD0FF</color>
+    <color name='hydrogen_bg_light'>#F7FBFD</color>
+    <color name='hydrogen_bg_dark'>#0B1216</color>
+</resources>
